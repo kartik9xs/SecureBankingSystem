@@ -6,8 +6,6 @@ from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# SECURITY WARNING: keep the secret key used in production secret!
-# Read from environment for safety. Example in .env.example
 SECRET_KEY = config('DJANGO_SECRET_KEY', default='dev-insecure-key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -190,3 +188,4 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
